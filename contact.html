@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us - Beautiful Landscaping</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var formData = new FormData(this);
+          fetch("/send", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.text())
+            .then((data) => alert(data))
+            .catch((error) => alert("Error!"));
+        });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="hamburger-menu">
+        <img src="hamburger-icon.png" alt="Menu" id="hamburger-icon" />
+      </div>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact Us</h1>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 Beautiful Landscaping</p>
+    </footer>
+  </body>
+</html>

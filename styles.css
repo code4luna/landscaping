@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav ul li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+}
+
+a,
+.btn {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover,
+.btn:hover {
+  color: #fff; /* or any hover color */
+  background-color: lightblue; /* or any background hover color */
+}
+
+.hero img {
+    width: 100%; /* Makes the image responsive */
+    max-width: 1200px; /* Maximum width */
+    max-height: 600px; /* Maximum height */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area nicely */
+    display: block; /* Removes default image inline properties */
+    margin: 0 auto; /* Center the image */
+} 
+
+.logo {
+    display: flex;
+    height: 40px;
+    justify-content: flex-start;
+}

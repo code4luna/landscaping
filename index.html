@@ -1,22 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beautiful Landscaping</title>
-    <link ref="stylesheet" href="styles.css" />
+    <title>Beautiful Surrounding LLC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="header-container">
-      <div class="header">
-        <div class="header-title">Beautiful Landscaping</div>
-        <div class="links">
-          <div class="Home"><a href="#">Home</a></div>
-          <div class="Services"><a href="#">Services</a></div>
-          <div class="Before"><a href="#">Before and After</a></div>
-          <div class="Contact"><a href="#">Contact</a></div>
-        </div>
+    <header>
+      <div class="hamburger-menu">
+        <img src="hamburger-icon.png" alt="Menu" id="hamburger-icon" />
       </div>
-    </div>
+      <nav id="navbar">
+        <ul>
+            <div class="logo">
+                <img src="./images/logo5.jpg" />
+            </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img src="./images/hero.jpg" alt="Beautiful Landscape" height="600px"/>
+        <div class="hero-text">
+          <h1>Welcome to Beautiful Landscaping</h1>
+          <p>Transforming your outdoor spaces into paradise.</p>
+          <a href="contact.html" class="btn">Get Your Free Consultation</a>
+        </div>
+      </section>
+
+      <section class="services-preview">
+        <h2>Our Services</h2>
+        <div class="service-items">
+          <div class="service-item">
+            <img src="service-1.jpg" alt="Garden Design" />
+            <h3>Garden Design</h3>
+            <p>Expert designs to bring your garden dreams to life.</p>
+          </div>
+          <div class="service-item">
+            <img src="service-2.jpg" alt="Lawn Care" />
+            <h3>Lawn Care</h3>
+            <p>Meticulous lawn care for a lush, green lawn.</p>
+          </div>
+          <div class="service-item">
+            <img src="service-3.jpg" alt="Outdoor Lighting" />
+            <h3>Outdoor Lighting</h3>
+            <p>Enhance your evenings with bespoke lighting solutions.</p>
+          </div>
+        </div>
+        <a href="services.html" class="btn">View All Services</a>
+      </section>
+
+      <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-items">
+          <!-- Testimonials go here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Beautiful Surrounding LLC</p>
+    </footer>
   </body>
 </html>
