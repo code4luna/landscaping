@@ -1,70 +1,190 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Beautiful Surrounding LLC</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <div class="hamburger-menu">
-        <img src="hamburger-icon.png" alt="Menu" id="hamburger-icon" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Surrounding LLC: Professional Landscape Enhancement Services in Westminster, CO</title>
+    <meta name="description" content="Beautiful Landscaping specializes in transforming outdoor spaces with innovative landscape enhancement services. Explore our garden renovation, water features, and custom outdoor lighting solutions.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<header>
+    <nav class="navbar-container">
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      <div class="left-section">
+        <div class="logo">
+          <img src="./images/logo5.jpg" alt="Logo" />
+        </div>
+        <div class="title">
+          <h1><a href="index.html">Beautiful Surrounding LLC</a></h1>
+        </div>
       </div>
-      <nav id="navbar">
-        <ul>
-            <div class="logo">
-                <img src="./images/logo5.jpg" />
-            </div>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+      
 
-    <main>
       <section class="hero">
-        <img src="./images/hero.jpg" alt="Beautiful Landscape" height="600px"/>
+        <img src="./images/hero.jpg" alt="Elegant garden landscape by Beautiful Surrounding" style="width:100%;height:auto;">
         <div class="hero-text">
-          <h1>Welcome to Beautiful Landscaping</h1>
-          <p>Transforming your outdoor spaces into paradise.</p>
-          <a href="contact.html" class="btn">Get Your Free Consultation</a>
+            <h1>Transform Your Space with Our Landscape Enhancement Services</h1>
+            <p>Discover the art of outdoor elegance with Beautiful Surrounding's bespoke landscape design and enhancement solutions.</p>
+            <a href="contact.html" class="btn">Schedule a Consultation</a>
         </div>
-      </section>
+        </section>
 
-      <section class="services-preview">
-        <h2>Our Services</h2>
-        <div class="service-items">
-          <div class="service-item">
-            <img src="service-1.jpg" alt="Garden Design" />
-            <h3>Garden Design</h3>
-            <p>Expert designs to bring your garden dreams to life.</p>
-          </div>
-          <div class="service-item">
-            <img src="service-2.jpg" alt="Lawn Care" />
-            <h3>Lawn Care</h3>
-            <p>Meticulous lawn care for a lush, green lawn.</p>
-          </div>
-          <div class="service-item">
-            <img src="service-3.jpg" alt="Outdoor Lighting" />
-            <h3>Outdoor Lighting</h3>
-            <p>Enhance your evenings with bespoke lighting solutions.</p>
-          </div>
-        </div>
-        <a href="services.html" class="btn">View All Services</a>
-      </section>
+    <main class="main">
 
-      <section class="testimonials">
-        <h2>What Our Customers Say</h2>
-        <div class="testimonial-items">
-          <!-- Testimonials go here -->
-        </div>
-      </section>
+        <section class="services-preview">
+            <h2>Beautiful Surrounding's Services</h2>
+            <div class="service-items">
+                <!-- Service Item 1 with Modal Trigger -->
+                <div class="service-item" onclick="openModal('modalGarden')">
+                    <img src="./images/garden.jpg" alt="Expert garden enhancement service professional" style="width:100%;height:auto;">
+                    <h3>Garden Enhancement</h3>
+                    <p>Enhance your garden's allure with our expert garden enhancement services. From vibrant flower beds to sustainable features, we transform your outdoor space into a picturesque haven. Contact us for a tailored solution that brings your garden dreams to life.</p>
+                    <button class="learn" onclick="openModal('modalGarden')">Learn More</button>
+                </div>
+                
+                <!-- Modal for Service Item 1 -->
+                <div id="modalGarden" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modalGarden')">&times;</span>
+                        <h2>Garden Enhancement</h2>
+                        <p>Discover the full potential of your garden with our specialized garden enhancement services. We focus on bringing out the best in your outdoor space, creating a harmonious blend of color, texture, and form. 
+                            <br><br>Whether you're looking to introduce vibrant flower beds, elegant landscaping features, or sustainable gardening practices, our team of experts is here to guide you. We pride ourselves on crafting personalized solutions that not only elevate the aesthetics of your garden but also contribute to its health and sustainability. Enhance your garden's charm and enjoy a peaceful, picturesque outdoor haven. 
+                            <br><br>Contact us to start your garden transformation journey today!</p>
+                    </div>
+                </div>
+        
+                <!-- Service Item 2 with Modal Trigger -->
+                <div class="service-item" onclick="openModal('modalLandscape')">
+                    <img src="./images/landscape.jpg" alt="Professional landscape renovation and enhancement" style="width:100%;height:auto;">
+                    <h3>Landscape Renovation</h3>
+                    <p>Revitalize your outdoor area with our professional landscape renovation services. We specialize in upgrading gardens into modern, beautiful spaces that elevate your property's appeal. Reach out to us for a bespoke renovation that makes your landscape vision a reality.</p>
+                    <button class="learn" onclick="openModal('modalLandscape')">Learn More</button>
+                </div>
+                <!-- Modal for Service Item 2 -->
+                <div id="modalLandscape" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modalLandscape')">&times;</span>
+                        <h2>Landscape Renovation</h2>
+                        <p>Transform your garden into a breathtaking oasis with our top-tier landscape renovation services. Specializing in turning tired, outdated yards into vibrant, modern retreats, we bring new life to every project. <br><br>Our skilled team combines innovative design with quality craftsmanship, ensuring your outdoor space not only looks fantastic but also enhances your property's value. Whether you're dreaming of elegant patios, lush greenery, or serene water features, we make it happen. Experience a seamless renovation journey with our commitment to excellence and customer satisfaction. Ready to rejuvenate your landscape? <br><br>Contact us today and unlock the potential of your outdoor space.</p>
+                    
+                    </div>
+                </div>
+        
+                <!-- Service Item 3 with Modal Trigger -->
+                <div class="service-item" onclick="openModal('modalXeriscape')">
+                    <img src="./images/zero.jpg" alt="Xersicape Landscape Zeroscape feature" style="width:100%;height:auto;">
+                    <h3>Xeriscape Enhancement</h3>
+                    <p>Whether you're envisioning a serene garden, a vibrant flower bed, or a minimalist gravel landscape, xeriscaping offers endless possibilities. Our expert team works closely with you to create a custom design that reflects your personal style while respecting the local ecosystem.</p>
+                    <button class="learn" onclick="openModal('modalXeriscape')">Learn More</button>
+                </div>
+                <!-- Modal for Service Item 3 -->
+                <div id="modalXeriscape" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modalXeriscape')">&times;</span>
+                        <h2>Xeriscape Enhancement</h2>
+                        <p>At the heart of xeriscaping is the use of native, drought-resistant plants. By selecting species naturally adapted to local climate conditions, xeriscaping creates harmonious outdoor spaces that require minimal water and maintenance. This not only preserves precious water resources but also provides a haven for local wildlife, fostering biodiversity.
+
+                            <br><br>The Benefits of Xeriscaping:<br>
+                            Water Conservation: Xeriscaping can reduce outdoor water use by up to 50%, making it a crucial practice in water-scarce areas.<br>
+                            Low Maintenance: Forget the endless mowing, pruning, and watering. Xeriscaping offers a low-maintenance alternative, saving you time and effort.<br>
+                            Cost-Effective: Reduced water bills and minimal maintenance requirements translate into significant cost savings over time.<br>
+                            Environmental Protection: By reducing the need for fertilizers and pesticides, xeriscaping minimizes soil and water pollution.<br>
+                            Aesthetic Appeal: Xeriscapes are visually stunning, offering a unique blend of textures, colors, and forms that change with the seasons.
+                        <br><br>Contact us today and unlock the potential of your outdoor space.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="services-section">
+            <div class="content-container">
+                <h2>How to Select the Right Landscaping Company for Your Needs</h2>
+                <p>Choosing the right landscaping company is crucial for transforming your outdoor space into a beautiful and functional extension of your home or business. With numerous options available, it can be challenging to determine which company is best suited to meet your specific needs. Here are some key factors to consider when making your decision:</p>
+                
+                <div class="factor">
+                    <h3>1. Understand Your Landscaping Needs</h3>
+                    <p><strong>Personal Style and Goals:</strong> Assess what style of landscaping you prefer and the goals you want to achieve, be it enhancing curb appeal, creating a recreational area, or establishing an environmentally friendly garden.</p>
+                    <p><strong>Scope of the Project:</strong> Determine whether you need simple maintenance, a complete overhaul, or specialized services like xeriscaping or hardscaping.</p>
+                </div>
+    
+                <div class="factor">
+                    <h3>2. Research and Recommendations</h3>
+                    <p><strong>Online Reviews and Ratings:</strong> Check online platforms for customer reviews and ratings of local landscaping companies.</p>
+                    <p><strong>Word-of-Mouth:</strong> Ask friends, family, or neighbors for recommendations, especially those who have recently undertaken landscaping projects.</p>
+                </div>
+    
+                <div class="factor">
+                    <h3>3. Experience and Expertise</h3>
+                    <p><strong>Years in Business:</strong> A company with a long track record is likely to have more experience and reliability.</p>
+                    <p><strong>Specializations:</strong> Ensure the company has expertise in the specific services you require, such as sustainable practices, specific garden styles, or custom hardscape designs.</p>
+                </div>
+    
+                <div class="factor">
+                    <h3>4. Review Their Portfolio</h3>
+                    <p><strong>Quality of Work:</strong> Look through their portfolio to assess the quality and style of their work.</p>
+                    <p><strong>Similar Projects:</strong> It's beneficial if they have experience with projects similar in scale and style to yours.</p>
+                </div>
+    
+                <div class="factor">
+                    <h3>5. Licenses, Certifications, and Insurance</h3>
+                    <p><strong>Professional Credentials:</strong> Check if the company has the necessary licenses and certifications to operate in your area.</p>
+                    <p><strong>Insurance:</strong> Ensure they have liability insurance to protect against any potential property damage during the project.</p>
+                </div>
+    
+                <div class="factor">
+                    <h3>6. Customer Service and Communication</h3>
+                    <p><strong>Responsiveness:</strong> Note how quickly and professionally the company responds to your inquiries.</p>
+                    <p><strong>Clear Communication:</strong> A good landscaping company should listen to your ideas and provide clear, detailed plans and estimates.</p>
+                </div>
+    
+                <div class="factor">
+                    <h3>7. Get Multiple Quotes</h3>
+                    <p><strong>Cost Estimates:</strong> Obtain detailed quotes from several companies to compare costs. Remember, the cheapest option isn't always the best.</p>
+                    <p><strong>Transparency:</strong> Look for transparency in pricing to avoid hidden costs.</p>
+                </div>
+    
+                <div class="factor">
+                    <h3>8. Sustainability Practices</h3>
+                    <p><strong>Eco-Friendly Options:</strong> If environmental impact is a concern, inquire about their use of sustainable materials and water-efficient designs.</p>
+                </div>
+    
+                <div class="factor">
+                    <h3>9. Warranty and Maintenance Services</h3>
+                    <p><strong>Aftercare Services:</strong> Check if they offer maintenance services post-project completion.</p>
+                    <p><strong>Warranty:</strong> Understand the warranty or guarantee offered on their workmanship and materials.</p>
+                </div>
+    
+                <div class="factor">
+                    <h3>10. Read the Contract Carefully</h3>
+                    <p><strong>Details of the Agreement:</strong> Ensure all aspects of the project are outlined in the contract, including timelines, costs, and the scope of work.</p>
+                </div>
+    
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-      <p>&copy; 2023 Beautiful Surrounding LLC</p>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p><strong>Phone:</strong> <a href="tel:+123456789">303-941-0683</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@example.com">BeautifulSurroundingLLC@gmail.com</a></p>
+            </div>
+        </div>
     </footer>
   </body>
 </html>
