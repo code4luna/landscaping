@@ -3,6 +3,31 @@ body {
   margin: 0;
 }
 
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
 footer {
   background-color: #333;
   color: white;
@@ -10,84 +35,24 @@ footer {
   padding: 1px;
 }
 
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px; /* Add some padding to the entire navbar */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
 }
-
-.left-section {
-  display: flex;
-  align-items: center;
-  margin-left: 40px; /* Adjust this to set how far from the left the logo and title start */
-}
-
-.logo img {
-  max-height: 90px; /* Adjust as needed */
-}
-
-.title h1 {
-  margin-left: 1px; /* Space between logo and title */
-}
-
-.nav-links {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-}
-
-.nav-links a {
-  margin: 0 10px; /* Spacing between links */
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-
-  .left-section, .nav-links {
-    width: 100%;
-    justify-content: center;
-    margin: 10px 0;
-  }
-
-  .left-section {
-    margin-left: 0; /* Remove the margin on smaller screens */
-  }
-
-  .nav-links a {
-    margin: 0 5px; /* Reduced spacing */
-  }
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .left-section, .nav-links {
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-
-  .nav-links a {
-    margin: 0 5px; /* Reduce spacing on smaller screens */
-  }
-}
-
-
 
 @media screen and (max-width: 600px) {
   .hamburger-menu {
     display: block;
   }
+
+  nav ul li a {
+    color: white;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+}
 
 a,
 .btn {
@@ -101,6 +66,12 @@ a:hover,
   background-color: rgb(31, 106, 26); /* or any background hover color */
 }
 
+.beautiful {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .hero img {
   width: 100%; /* Makes the image responsive */
   max-width: 1200px; /* Maximum width */
@@ -109,6 +80,19 @@ a:hover,
   object-fit: cover; /* Ensures the image covers the area nicely */
   display: block; /* Removes default image inline properties */
   margin: 0 auto; /* Center the image */
+}
+
+.logo {
+  display: flex;
+  height: 40px;
+  justify-content: flex-start;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Adjust this as needed */
+  align-items: center; /* Adjust this as needed */
 }
 
 /* Service Items */
@@ -130,6 +114,18 @@ a:hover,
   .service-item {
     max-width: 100%; /* Full width on smaller screens */
   }
+}
+
+/* Navigation Menu - if you wish to make it flexbox */
+nav ul {
+  display: flex;
+  justify-content: center; /* Aligns menu items in the center */
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 10px; /* Spacing between menu items */
 }
 
 .modal {
@@ -340,10 +336,4 @@ a:hover,
 .contact-info {
   display: inline;
 
-}
-
-.beautiful {
-  display: flex;
-  justify-content: flex-start;
-  color: black;
 }
